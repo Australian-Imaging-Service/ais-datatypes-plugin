@@ -1,7 +1,7 @@
 /*
- * xnat-template-plugin: build.gradle
+ * ais-xnat-plugin: build.gradle
  * XNAT https://www.xnat.org
- * Copyright (c) 2005-2021, Washington University School of Medicine
+ * Copyright (c) 2023, The University of Sydney
  * All Rights Reserved
  *
  * Released under the Simplified BSD.
@@ -9,7 +9,7 @@
 
 buildscript {
     ext {
-        vXnat = "1.8.3"
+        vXnat = "1.8.8"
     }
 }
 
@@ -22,7 +22,7 @@ plugins {
     id "com.palantir.git-version" version "0.12.1"
     id "io.franzbecker.gradle-lombok" version "4.0.0"
     id "io.spring.dependency-management" version "1.0.11.RELEASE"
-    id "org.nrg.xnat.build.xnat-data-builder" version "1.8.3"
+    id "org.nrg.xnat.build.xnat-data-builder" version "1.8.8"
 }
 
 // TODO: Change the group and version to values appropriate for your plugin project.
@@ -31,9 +31,9 @@ plugins {
 //       Maven naming conventions: https://maven.apache.org/guides/mini/guide-naming-conventions.html
 //       For example, if a group at Miskatonic University developed a plugin, the
 //       group might be "edu.miskatonic.imaging.xnat".
-group "org.nrg.xnatx.plugins"
+group "io.github.australianimagingservice"
 version "1.0.0-SNAPSHOT"
-description "XNAT Template Plugin for XNAT 1.8"
+description "Australian Imaging Service Plugin for XNAT 1.8"
 
 // TODO: This provides access to all of these repositories for dependency resolution.
 repositories {

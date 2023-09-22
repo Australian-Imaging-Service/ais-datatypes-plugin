@@ -12,3 +12,4 @@ gradle.properties
 ide-bin/
 lib/
 out/
+.DS_Store
