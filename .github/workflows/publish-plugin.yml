@@ -28,6 +28,8 @@ jobs:
         run: ls -la
       - name: Switch to ECP directory
         run: cd ecp-datatype-plugin
+      - name: list all the files under ecp-datatype-directory
+        run: ls -la
       - name: Run all tests
         run: ./gradlew clean check --no-daemon
         working-directory: ${{ github.workspace }}/${{ env.SERVICE_NAME }}/
