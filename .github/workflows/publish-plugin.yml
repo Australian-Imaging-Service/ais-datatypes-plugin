@@ -23,7 +23,9 @@ jobs:
         with:
           distribution: 'temurin' 
           java-version: '17' 
-          cache: 'gradle' 
+          cache: 'gradle'
+      - name: Switch to ECP directory
+        run: cd ecp-datatype-plugin
       - name: Run all tests
         run: ./gradlew clean check --no-daemon
         working-directory: ${{ github.workspace }}/${{ env.SERVICE_NAME }}/
