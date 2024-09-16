@@ -26,8 +26,7 @@ jobs:
           cache: 'gradle'
       - name: list the directories
         run: ls -la
-      - name: Switch to ECP directory
-        run: cd ecp-datatype-plugin
+      
       - name: list all the files under ecp-datatype-directory
         run: ls -la
       - name: Run all tests
