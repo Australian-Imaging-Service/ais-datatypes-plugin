@@ -24,6 +24,8 @@ jobs:
           distribution: 'temurin' 
           java-version: '17' 
           cache: 'gradle'
+      - name: list the directories
+        run: ls -la
       - name: Switch to ECP directory
         run: cd ecp-datatype-plugin
       - name: Run all tests
