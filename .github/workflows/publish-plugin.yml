@@ -31,7 +31,7 @@ jobs:
       - name: list all the files under ecp-datatype-directory
         run: ls -la
       - name: Run all tests
-        run: ./gradlew clean check --no-daemon
+        run: ./ecp-datatype-plugin/gradlew clean check --no-daemon
         working-directory: ${{ github.workspace }}/${{ env.SERVICE_NAME }}/
       
   determine_should_publish_new_version: # Publish new version for new tags
