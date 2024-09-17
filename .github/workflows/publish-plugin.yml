@@ -18,7 +18,7 @@ jobs:
       - name: Checkout local repository
         uses: actions/checkout@v3
         with:
-          path: ${{ github.workspace }}/${{ env.SERVICE_NAME }}/ecp-datatype-plugin
+          path: ${{ github.workspace }}/${{ env.SERVICE_NAME }}
       - uses: actions/setup-java@v3
         with:
           distribution: 'temurin' 
@@ -30,7 +30,7 @@ jobs:
         run: cd ecp-datatype-plugin
       - name: Run all tests
         run: ./ecp-datatype-plugin/gradlew clean check --no-daemon
-        working-directory: ${{ github.workspace }}/${{ env.SERVICE_NAME }}/
+        working-directory: ${{ github.workspace }}/${{ env.SERVICE_NAME }}/ecp-datatype-plugin
       
   determine_should_publish_new_version: # Publish new version for new tags
     runs-on: ubuntu-22.04
