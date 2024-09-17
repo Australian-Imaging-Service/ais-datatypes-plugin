@@ -18,7 +18,7 @@ jobs:
       - name: Checkout local repository
         uses: actions/checkout@v3
         with:
-          path: ${{ github.workspace }}/${{ env.SERVICE_NAME }}
+          path: ${{ github.workspace }}/${{ env.SERVICE_NAME }}/ecp-datatype-plugin
       - uses: actions/setup-java@v3
         with:
           distribution: 'temurin' 
