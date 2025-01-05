@@ -40,6 +40,12 @@ jobs:
     - name: list the directories
       run: ls -la
 
+    - name: switch to ecp-datatype-plugin directory
+      run: cd ecp-datatype-plugin
+
+    - name: Display current directory
+      run: pwd
+
     - name: Build with Gradle Wrapper
       run: ./ecp-datatype-plugin/gradlew build
 
