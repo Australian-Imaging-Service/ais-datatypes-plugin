@@ -36,8 +36,7 @@ jobs:
 
     - name: Display current directory
       run: pwd
-    - name: Switch to ECP directory
-      run: cd ecp-datatype-plugin
+
     - name: list the directories
       run: ls -la
 
